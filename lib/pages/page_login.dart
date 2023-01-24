@@ -58,7 +58,7 @@ class _PageLoginState extends State<PageLogin> {
                           enabled: !login.loading,
                           controler: emailController,
                           title: "E-mail",
-                          prefixIcon: Icons.account_circle,
+                          prefixIcon: Icon(Icons.account_circle),
                           obscure: false,
                           textInput: TextInputType.emailAddress,
                           callback: login.setEmail,
@@ -74,7 +74,7 @@ class _PageLoginState extends State<PageLogin> {
                           controler: senhaController,
                           title: "Senha",
                           sufixIcon:  IconButton(icon: Icon(!login.senhaVisivel ? Icons.visibility : Icons.visibility_off), onPressed: login.setvisible,),
-                          prefixIcon: Icons.lock, 
+                          prefixIcon: Icon(Icons.lock), 
                           obscure: !login.senhaVisivel,
                           textInput: TextInputType.text);
                     }),

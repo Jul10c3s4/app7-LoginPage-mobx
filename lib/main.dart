@@ -1,4 +1,5 @@
 import 'package:app7_mobx/login.dart';
+import 'package:app7_mobx/pages/homepage.dart';
 import 'package:app7_mobx/pages/page_login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.deepPurpleAccent
       ),
-      home: PageLogin(),
+      home: HomePage(),
     ),
     );
   }

@@ -8,7 +8,7 @@ import 'package:flutter/src/widgets/framework.dart';
 class CustomTextFiled extends StatefulWidget {
   final TextEditingController controler;
   final String title;
-  final IconData prefixIcon;
+  final Widget? prefixIcon;
   final Widget? sufixIcon;
   final Function(String)? callback;
   final TextInputType textInput;
@@ -19,7 +19,7 @@ class CustomTextFiled extends StatefulWidget {
       required this.controler,
       required this.title,
       this.sufixIcon,
-      required this.prefixIcon,
+      this.prefixIcon,
       this.callback,
       required this.obscure,
       required this.textInput, 
@@ -53,7 +53,7 @@ class _CustomTextFiledState extends State<CustomTextFiled> {
           ),
           border: InputBorder.none,
           label: Text('${widget.title}'),
-          prefixIcon: Icon(widget.prefixIcon),
+          prefixIcon: widget.prefixIcon,
           suffixIcon: widget.sufixIcon,
         ),
       ),
